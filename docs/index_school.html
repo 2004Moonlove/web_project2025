@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yang Ye Portfolio</title>
+  <link rel="stylesheet" href="style_school.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#school">My School</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- 首页封面背景 + 标题文字 -->
+  <section class="hero full-height">
+    <div class="hero-text">
+      <h1>Yang Ye</h1>
+      <h3 class="typed-text">Computer Science Student</h3>
+      <a href="#about" class="hero-button">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Yang, a passionate and energetic computer science student with interests in machine learning, medical imaging, and algorithm design. I love solving problems and learning through real-world research and internships.</p>
+  </section>
+
+  <section id="My_school" class="section">
+    <h2>My School</h2>
+    <p>Here's a look at my academic journey, from high school to university:</p>
+
+    <div id="cards" class="school-grid">
+      <!-- 红岭中学 -->
+      <div id="HL_card" class="school-card">
+        <img src="./image/红岭.jpg" alt="红岭中学">
+        <h3>Hongling High School</h3>
+        <p>I attended <strong>Hongling High School</strong> in Shenzhen.
+          This school fostered my curiosity and gave me the foundation to pursue my academic interests.</p>
+      </div>
+      <!-- 四川大学 -->
+      <div id="SCU_card" class="school-card">
+        <img src="./image/四川大学.jpg" alt="四川大学">
+        <h3>Sichuan University</h3>
+        <p>My university life began at <strong>Sichuan University</strong>, one of the top universities in western
+          China.
+          It was here that I explored new areas, met amazing people, and built strong academic habits.</p>
+        <p><a href="https://www.scu.edu.cn/" target="_blank">Visit Sichuan University</a></p>
+      </div>
+      <!-- 匹兹堡大学 -->
+      <div id="upitt_card" class="school-card">
+        <img src="./image/upitt.jpg" alt="University of Pittsburgh">
+        <h3>University of Pittsburgh</h3>
+        <p>Now I'm studying Computer Science at the <strong>University of Pittsburgh</strong>.
+          Pitt's diverse community and rich research resources have allowed me to grow personally and academically.
+        </p>
+        <p><a href="https://www.pitt.edu/" target="_blank">Visit University of Pittsburgh</a></p>
+      </div>
+    </div>
+
+    <!-- detail -->
+    <div id="detail_inf">
+      <div id="HL_D" class="school_detail_box">
+        <section>
+          <h3>High school: Hong Ling</h3>
+        </section>
+        <p>
+          <strong>Hongling High School</strong> is a prestigious key secondary school located in Shenzhen, China,
+          renowned for its <strong>excellent academic quality</strong> and <strong>vibrant campus culture</strong>.
+        </p>
+
+        <p>
+          The school is equipped with <strong>advanced teaching facilities</strong> and supported by a
+          <strong>highly experienced and dedicated faculty</strong>. It is committed to cultivating well-rounded
+          students with a strong <strong>global perspective</strong> and <strong>innovative mindset</strong>.
+        </p>
+
+        <p>
+          With a strong focus on <strong>holistic education</strong>, Hongling encourages students to thrive across
+          <strong>academics, sports, and the arts</strong>. Its students have achieved <strong>outstanding
+            results</strong> in various municipal, provincial, and national competitions.
+        </p>
+
+        <p>
+          Guided by the school motto <strong>“Virtue, Scholarship, and the Pursuit of Excellence”</strong>, Hongling
+          strives not only to deliver knowledge, but also to nurture students with a strong sense of
+          <strong>responsibility, leadership, and creativity</strong>, empowering them to become future-ready
+          individuals.
+        </p>
+
+        <img src="./image/HL.jpg" alt="红岭中学" class="photo">
+        <br>
+        <button class="back-button" onclick="backToCards()">Back</button>
+      </div>
+      <div id="SCU_D" class="school_detail_box">
+        <section>
+          <h3>University: Sichuan University</h3>
+        </section>
+        <p>
+        <p>
+          <strong>Sichuan University</strong> is a prestigious and comprehensive university located in Chengdu,
+          Sichuan Province, China. It is recognized as a key institution under China's national <strong>“Double
+            First-Class”</strong> initiative.
+        </p>
+
+        <p>
+          The university was formed through the merger of the former Sichuan University, the former Chengdu
+          University of Science and Technology, and the former West China University of Medical Sciences. It offers
+          a wide range of disciplines, including <strong>liberal arts, science, engineering, and medicine</strong>,
+          and ranks among the top universities in China.
+        </p>
+
+        <p>
+          With the motto <strong>“Embrace All Streams, Hold Great Capacity”</strong>, Sichuan University emphasizes
+          both <strong>academic innovation</strong> and <strong>talent cultivation</strong>. It is home to numerous
+          <strong>national key laboratories</strong> and research centers, fostering cutting-edge research across
+          disciplines.
+        </p>
+
+        <p>
+          The campus is known for its beautiful environment and rich cultural heritage. Over the years, the
+          university has produced a large number of <strong>highly qualified graduates</strong> and enjoys a strong
+          reputation both in China and internationally.
+        </p>
+
+        <img src="./image/SICHuan.jpg" alt="四川大学" class="photo">
+        <br>
+        <button class="back-button" onclick="backToCards()">Back</button>
+      </div>
+      <div id="upitt_D" class="school_detail_box">
+        <section>
+          <h3>University: University of Pittsburgh</h3>
+        </section>
+        <p>
+          The <strong>University of Pittsburgh</strong> (commonly known as <strong>Pitt</strong>) is a
+          world-renowned research university located in Pittsburgh, Pennsylvania, USA. Founded in
+          <strong>1787</strong>, it boasts a long history and a strong academic reputation.
+        </p>
+
+        <p>
+          As one of the top public universities in the United States, Pitt is widely recognized for its excellence
+          in <strong>medicine, engineering, computer science, business, and law</strong>. It is especially
+          distinguished in the fields of <strong>medical and biomedical research</strong>, with its affiliated
+          <strong>University of Pittsburgh Medical Center (UPMC)</strong> ranked among the world’s leading
+          healthcare institutions.
+        </p>
+
+        <p>
+          Pitt embraces a philosophy that combines <strong>innovation with practical experience</strong>, offering
+          students a wealth of opportunities in <strong>research and internships</strong> across disciplines.
+        </p>
+
+        <p>
+          With its <strong>inclusive academic environment</strong> and <strong>beautiful campus</strong>, Pitt
+          attracts outstanding students from all over the world who are eager to pursue knowledge, collaboration,
+          and global impact.
+        </p>
+        <img src="./image/uPittsburgh.jpg" alt="Pitt" class="photo">
+        <img src="./image/Cathy.jpg" alt="" class="photo">
+        <br>
+        <button class="back-button" onclick="backToCards()">Back</button>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <p>Contact me at yay140@pitt.edu</p>
+  </footer>
+</body>
+</html>
