@@ -23,21 +23,59 @@
     <p>Hello! I'm Yang, a passionate and energetic computer science student with interests in machine learning, medical imaging, and algorithm design. I love solving problems and learning through real-world research and internships.</p>
   </section>
 
-  <section id="experience">
+  <section id="my_life_section" class="section">
     <h2>Experience</h2>
-    <div class="card">
-      <h3>4DCT Lung Modeling (Research)</h3>
-      <p>Analyzed point cloud data to build a dynamic respiratory motion model.</p>
-    </div>
-    <div class="card">
-      <h3>Flexible Exoskeleton Project</h3>
-      <p>Evaluated soft robotics structures through literature review and testing strategies.</p>
-    </div>
-    <div class="card">
-      <h3>Intern - Data Analyst</h3>
-      <p>Extracted insights using SQL and supported media production with statistical analysis.</p>
+    <div class="experience-grid">
+  
+      <!-- Internship -->
+      <div class="exp-card" onclick="toggleDetail(this)">
+        <div class="exp-header">
+          <h3>Media Data Analyst Intern</h3>
+          <p><em>Shenzhen Nanying Culture Media (Jul 2022 – Aug 2022)</em></p>
+        </div>
+        <div class="exp-detail">
+          <ul>
+            <li>Conducted customer data analysis using SQL to extract actionable insights for supporting marketing and business strategies.</li>
+            <li>Researched and analyzed statistical data to support a documentary on urban development and natural resource management in Pingshan District, Shenzhen.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Research: Lung Model -->
+      <div class="exp-card" onclick="toggleDetail(this)">
+        <div class="exp-header">
+          <h3>Modeling of Lung Respiratory Movement Model</h3>
+          <p><em>Sichuan University – Pittsburgh Institute (Oct 2023 – Jun 2024)</em></p>
+        </div>
+        <div class="exp-detail">
+          <ul>
+            <li>Transformed 4DCT image data into processable point cloud numerical formats for advanced analysis and landmark point extraction.</li>
+            <li>Annotated CT images by precisely identifying and labeling landmark points within the datasets.</li>
+            <li>Explored theoretical aspects of affine transformations to accurately determine the positional coordinates of identical point clouds at different time points.</li>
+            <li>Collaborated in the development of a comprehensive respiratory motion model of the lungs, enhancing the understanding of pulmonary dynamics.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Research: Exoskeleton -->
+      <div class="exp-card" onclick="toggleDetail(this)">
+        <div class="exp-header">
+          <h3>Flexible Exoskeleton Performance Evaluation</h3>
+          <p><em>SCUPI Research Honor Program (Mar 2023 – Dec 2023)</em></p>
+        </div>
+        <div class="exp-detail">
+          <ul>
+            <li>Selected for SCUPI’s Research Honor Program to research flexible exoskeletal structures.</li>
+            <li>Conducted comprehensive literature reviews to understand the architecture and mechanics of flexible exoskeletons in motion.</li>
+            <li>Analyzed and compared various methodologies for assessing and testing the efficacy of flexible exoskeletal systems.</li>
+          </ul>
+        </div>
+      </div>
+  
     </div>
   </section>
+  
+  
 
   <section id="skills">
     <h2>Skills</h2>

@@ -63,4 +63,51 @@ body {
     padding: 30px;
     text-align: center;
   }
+
+  /* for the card part */
+  .experience-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .exp-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .exp-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .exp-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .exp-header p {
+    margin: 5px 0 10px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .exp-detail {
+    margin-top: 10px;
+    display: none;
+  }
+  
+  .exp-detail ul {
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+  
+  .exp-card.open .exp-detail {
+    display: block;
+  }
+  
   
