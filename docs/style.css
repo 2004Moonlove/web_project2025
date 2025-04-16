@@ -1,0 +1,183 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  --hero-bg: url('image/横图加州.jpg');
+}
+/*  */
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.top-nav ul li {
+  margin: 0 20px;
+}
+
+.top-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  /* width: 100%; */
+  /* background-image: url('image/横图加州.jpg'); */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  --hero-bg: url('image/横图加州.jpg');
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: var(--hero-bg, url('image/横图加州.jpg'));
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  z-index: -1;
+}
+
+
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-text h3 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.hero-button {
+  margin-top: 30px;
+  background: white;
+  color: #6a5acd;
+  padding: 12px 28px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #f0f0f0;
+}
+
+/*  */
+section:not(.hero) {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-grid li {
+  background: #eee;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+/* for the card part */
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.exp-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.exp-card:hover {
+  transform: scale(1.01);
+}
+
+.exp-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.exp-header p {
+  margin: 5px 0 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.exp-detail {
+  margin-top: 10px;
+  display: none;
+}
+
+.exp-detail ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.exp-card.open .exp-detail {
+  display: block;
+}
+
