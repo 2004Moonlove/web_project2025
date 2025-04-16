@@ -5,7 +5,7 @@ html, body {
   }
   
   .hero {
-    height: 30vh;
+    height: 100vh;
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -47,10 +47,8 @@ html, body {
   
   .hero {
     height: 30vh;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    --hero-bg: url('image/横图加州.jpg');
+    /* width: 100%; */
+    /* background-image: url('image/横图加州.jpg'); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -59,8 +57,8 @@ html, body {
     justify-content: center;
     text-align: center;
     color: white;
+    --hero-bg: url('image/横图加州.jpg');
   }
-  
   
   .hero::before {
     content: "";
@@ -115,91 +113,20 @@ html, body {
     margin: 0 auto;
   }
   
-
-  /* myschool */
-#My_school {
-    clear: both;
-    display: block;
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
   }
   
-  .school-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 30px;
-    padding: 0 20px;
-  }
-  
-  .school-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .school-card:hover {
-    transform: scale(1.02);
-  }
-  
-  .school-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
+  .skills-grid li {
+    background: #eee;
+    padding: 10px 15px;
     border-radius: 8px;
-    margin-bottom: 10px;
   }
-  
-  .school-card h3 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-  .school-card a {
-    color: #0056b3;
-    text-decoration: none;
-  }
-  
-  .school-card a:hover {
-    text-decoration: underline;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* for the detailView */
-  .school_detail_box {
-    display: none;
-  }
-  
-  .school_detail_box .photo {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 10px;
-    margin-top: 15px;
-  }
-  
-  .back-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #444;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
   
   footer {
     background: #222;
@@ -208,4 +135,50 @@ html, body {
     text-align: center;
   }
   
- 
+  /* for the card part */
+  .experience-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .exp-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .exp-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .exp-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .exp-header p {
+    margin: 5px 0 10px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .exp-detail {
+    margin-top: 10px;
+    display: none;
+  }
+  
+  .exp-detail ul {
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+  
+  .exp-card.open .exp-detail {
+    display: block;
+  }
+  
+  
