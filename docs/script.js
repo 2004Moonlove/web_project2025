@@ -28,3 +28,27 @@ document.addEventListener("DOMContentLoaded", function () {
     hero.style.setProperty("--hero-bg", `url('${bgImages[bgi]}')`);
   }, 5000);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // 导航栏滚动变换
+  const nav = document.querySelector(".top-nav");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const header = document.getElementById("mainHeader");
+//   window.addEventListener("scroll", () => {
+//     if (window.scrollY > 50) {
+//       header.classList.add("scrolled");
+//     } else {
+//       header.classList.remove("scrolled");
+//     }
+//   });
+// });
+
