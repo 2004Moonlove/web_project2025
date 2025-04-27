@@ -41,14 +41,28 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const header = document.getElementById("mainHeader");
-//   window.addEventListener("scroll", () => {
-//     if (window.scrollY > 50) {
-//       header.classList.add("scrolled");
-//     } else {
-//       header.classList.remove("scrolled");
-//     }
-//   });
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  // Lightbox 功能
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const galleryImages = document.querySelectorAll('.gallery-img');
+  const closeBtn = document.querySelector('.close');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', function() {
+      lightbox.style.display = "flex";
+      lightboxImg.src = this.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', function() {
+    lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener('click', function(e) {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = "none";
+    }
+  });
+});
 
